@@ -1,0 +1,20 @@
+{
+    "orgList":[
+    			{
+				    "name": "Microsoft",
+				    "url":"www.microsoft.com"
+				},
+				{
+				    "name": "Google",
+				    "url":"www.google.com"
+				},
+				{
+				    "name": "Amazon",
+				    "url":"www.amazon.com"
+				},
+				{
+					"name": "Facebook",
+					"url": "www.facebook.com"
+				}
+				]
+}

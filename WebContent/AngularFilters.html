@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="Scripts/angular.js"></script>
+<script type="text/javascript" src="Scripts/SourceScript1.js"></script>
+<meta charset="UTF-8">
+<title>Learning AngularJS</title>
+</head>
+<body ng-app="myApp">
+Filter Text : <input type="text" ng-model="search.Technology" placeholder="Filter By Technology">
+<br/><hr>
+	<table ng-controller="SimpleController" border="2px">
+		<tr>
+			<th>Technology</th><th>BuzzWords</th>
+		</tr>
+		<tr align="center" ng-repeat="record in data |filter : search">
+			<td>{{record.Technology}}</td><td>{{record.BuzzWord}}</td>
+		</tr>
+	</table>
+	<!-- Filter is applied only on the first column. Figure out things happening behind the scene -->
+</body>
+</html>

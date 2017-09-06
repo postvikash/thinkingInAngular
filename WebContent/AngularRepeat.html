@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="Scripts/angular.js"></script>
+<script type="text/javascript" src="Scripts/SourceScript3.js"></script>
+<title>Learning AngularJS</title>
+</head>
+<body ng-app="myApp">
+	<h2> Employees and their organization list</h2>
+	<ul ng-controller="SimpleController">
+		<li ng-repeat="employee in employees">
+		{{employee.name+' works for '+employee.org}} 
+	</ul>
+</body>
+</html>

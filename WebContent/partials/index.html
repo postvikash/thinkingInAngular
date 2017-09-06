@@ -1,0 +1,22 @@
+<div class="container" >
+		<h1><header>Fortune Big Four</header></h1>
+		<table>
+		<thead>
+			<tr><th colspan="4">The Big Four</th></tr>
+		</thead>
+			<tr>
+				<th>#</th>
+				<th>Organization</th>
+				<th>Offical Website</th>
+				<th>Offical Logo</th>
+			</tr>
+			<tr ng-repeat="org in orgList|orderBy: 'name'">
+				<td>{{$index+1}}</td>
+				<td>{{org.name}}</td>
+				<td>{{org.url}}</td>
+				<td align="center"><img height="30px" width="30px" ng-src="resources/images/{{org.name}}.png" alt="Logo"/></td>
+			</tr>
+		</table>
+		<br/>
+		<footer>ajax in angularJS using $http service</footer>
+</div>

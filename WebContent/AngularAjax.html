@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="Scripts/angular.js"></script>
+<script type="text/javascript" src="Scripts/angular-route.js"></script>
+<script type="text/javascript" src="Scripts/SourceScript4.js"></script>
+<style>
+   table, th , td {
+      border: 1px solid grey;
+      border-collapse: collapse;
+      padding: 8px;
+   }
+   
+   table {
+   	margin: 0 auto;
+   }
+   
+   table tr:nth-child(odd) {
+      background-color: #f2f2f2;
+   }
+
+   table tr:nth-child(even) {
+      background-color: #ffffff;
+   }
+   
+   header, footer {
+	    padding: 1em;
+	    color: white;
+	    background-color: black;
+	    clear: left;
+	    text-align: center;
+	}
+	
+	div.container {
+    	width: 100%;
+    	margin: 0 auto;
+	}
+	
+	nav {
+	    float: left;
+	    max-width: 160px;
+	    margin: 0;
+	    padding: 1em;
+	}
+
+	nav ul {
+	    list-style-type: none;
+	    padding: 0;
+	}
+   
+	nav ul a {
+    	text-decoration: none;
+	}
+	
+	article {
+	    margin-left: 170px;
+	    border-left: 1px solid gray;
+	    padding: 1em;
+	    overflow: hidden;
+	}
+	
+</style>
+<meta charset="UTF-8">
+<title>Learning AngularJS</title>
+</head>
+<body ng-app="myApp" style="background-color:#C8DEC0;">
+<div ng-view></div>
+		<nav>
+			<ul>
+				<li><a href="#!">Home</a></li>
+				<li><a href="#!amazon" >Amazon</a></li>
+				<li><a href="#!facebook" >Facebook</a></li>
+				<li><a href="#!google" >Google</a></li>
+				<li><a href="#!microsoft" >Microsoft</a></li>
+			</ul>
+		</nav>
+</body>
+</html>
